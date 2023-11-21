@@ -22,15 +22,14 @@ Ensure all necessary dependencies are installed as specified in the pom.xml file
 ### Use below query for creating the database👇
 
 **create database if not exists QRCodeAPI;
-use QRCodeAPI;**
+use QRCodeAPI;
 
-**#CREATE TABLE QRCodeEntity (
-    #id BIGINT AUTO_INCREMENT PRIMARY KEY,
-   # data VARCHAR(255)
-#);**
-
-**ALTER TABLE qrcode_entity MODIFY qr_code_data BLOB;**
-
+CREATE TABLE QRCodeEntity (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    data VARCHAR(255)
+);
+ALTER TABLE qrcode_entity MODIFY qr_code_data BLOB;
+**
 
 # Postman
 Postman is used to test the user input 'data'.
